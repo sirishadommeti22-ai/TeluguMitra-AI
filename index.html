@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ManaMitra-AI</title>
+	<link rel="stylesheet"
+		  href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<main class="app">
+		<header class="topbar">
+			<div class="avatar">🤗</div>
+			<div>
+				<h1>ManaMitra-AI</h1>
+				<p>నీ friendly AI learning partner</p>
+			</div>
+			<span class="online">● Online</span>
+		</header>
+
+		<section id="chat" class="chat">
+			<div class="message bot">
+				<strong>Hey friend! 👋</strong>
+				<p>
+					YOUR AI FRIEND FOR BETTER UNDERSTANDING! 😊
+				</p>
+			</div>
+		</section>
+
+		<section class="composer">
+			<label for="message">English matter or your doubt</label>
+			<textarea
+				id="message"
+				rows="4"
+				maxlength="8000"
+				placeholder="Paste your English notes here..."></textarea>
+
+			<div class="actions">
+				<span id="counter">0 / 8000</span>
+				<button id="sendBtn" type="button">
+					Explain to me ✨
+				</button>
+			</div>
+			<p class="hint">
+				Tip: Ask “Inka simple ga cheppu” to understand better.
+			</p>
+		</section>
+	</main>
+
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
